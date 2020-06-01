@@ -1,0 +1,24 @@
+name: 'CapRover App Deploy'
+description: 'Deploy application to CapRover server'
+branding:
+  icon: 'caprover.svg'
+  color: orange
+inputs:
+  host:
+    description: 'CapRover machine url i.e., https://captain.your-domain.com'
+    required: true
+  password:
+    description: 'CapRover admin password. Use secret for more security'
+    required: true
+  app:
+    description: 'App name on CapRover server'
+    required: true
+  branch:
+    description: 'Branch to be deployed'
+    required: false
+  image:
+    description: 'Docker image to be deployed'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
