@@ -1,6 +1,6 @@
 # CapRover App Deploy
 
-Action to deploy application to CarRover sever
+Action to deploy application to CapRover server
 
 
 ## Inputs
